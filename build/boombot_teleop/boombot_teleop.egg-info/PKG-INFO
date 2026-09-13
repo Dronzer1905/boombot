@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: boombot-teleop
+Version: 0.0.0
+Summary: Joystick teleoperation and serial communication for Boombot
+Maintainer: Your Name
+Maintainer-email: your_email@domain.com
+License: Apache-2.0
