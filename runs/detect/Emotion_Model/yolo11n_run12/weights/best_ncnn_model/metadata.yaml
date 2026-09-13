@@ -1,0 +1,27 @@
+description: Ultralytics YOLO11n model trained on Facial Emotion Detection.v1i.yolov11/data.yaml
+author: Ultralytics
+date: '2026-03-04T21:14:27.895191'
+version: 8.4.19
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 416
+- 416
+names:
+  0: Irritated
+  1: Neutral
+  2: angry
+  3: disgust
+  4: fear
+  5: happy
+  6: neutral
+  7: sad
+  8: surprise
+args:
+  batch: 1
+  half: false
+channels: 3
+end2end: false

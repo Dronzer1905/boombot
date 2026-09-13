@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 9
+names: ['Irritated', 'Neutral', 'angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+
+roboflow:
+  workspace: stress-detection-wnra9
+  project: facial-emotion-detection-mlrex
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/stress-detection-wnra9/facial-emotion-detection-mlrex/dataset/1
