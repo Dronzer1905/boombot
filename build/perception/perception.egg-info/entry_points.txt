@@ -1,0 +1,2 @@
+[console_scripts]
+tracker_node = perception.oakd_tracker_node:main

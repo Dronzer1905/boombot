@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/perception/perception.egg-info
+writing ../../build/perception/perception.egg-info/PKG-INFO
+writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+writing requirements to ../../build/perception/perception.egg-info/requires.txt
+writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dronzer/boombot/build/perception/build
+creating /home/dronzer/boombot/build/perception/build/lib
+creating /home/dronzer/boombot/build/perception/build/lib/perception
+copying perception/__init__.py -> /home/dronzer/boombot/build/perception/build/lib/perception
+copying perception/oakd_tracker_node.py -> /home/dronzer/boombot/build/perception/build/lib/perception
+running install
+running install_lib
+creating /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception
+copying /home/dronzer/boombot/build/perception/build/lib/perception/__init__.py -> /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception
+copying /home/dronzer/boombot/build/perception/build/lib/perception/oakd_tracker_node.py -> /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception
+byte-compiling /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception/oakd_tracker_node.py to oakd_tracker_node.cpython-312.pyc
+running install_data
+creating /home/dronzer/boombot/install/perception/share/ament_index
+creating /home/dronzer/boombot/install/perception/share/ament_index/resource_index
+creating /home/dronzer/boombot/install/perception/share/ament_index/resource_index/packages
+copying resource/perception -> /home/dronzer/boombot/install/perception/share/ament_index/resource_index/packages
+copying package.xml -> /home/dronzer/boombot/install/perception/share/perception
+running install_egg_info
+Copying ../../build/perception/perception.egg-info to /home/dronzer/boombot/install/perception/lib/python3.12/site-packages/perception-0.0.0-py3.12.egg-info
+running install_scripts
+Installing tracker_node script to /home/dronzer/boombot/install/perception/lib/perception
+writing list of installed files to '/home/dronzer/boombot/build/perception/install.log'
