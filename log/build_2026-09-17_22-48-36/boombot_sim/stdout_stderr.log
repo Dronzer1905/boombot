@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/boombot_sim/boombot_sim.egg-info
+writing ../../build/boombot_sim/boombot_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/boombot_sim/boombot_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/boombot_sim/boombot_sim.egg-info/entry_points.txt
+writing requirements to ../../build/boombot_sim/boombot_sim.egg-info/requires.txt
+writing top-level names to ../../build/boombot_sim/boombot_sim.egg-info/top_level.txt
+writing manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dronzer/boombot/build/boombot_sim/build
+creating /home/dronzer/boombot/build/boombot_sim/build/lib
+creating /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim
+copying boombot_sim/mock_oakd.py -> /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim
+copying boombot_sim/__init__.py -> /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim
+running install
+running install_lib
+creating /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim
+copying /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim/mock_oakd.py -> /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim
+copying /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim/__init__.py -> /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim
+byte-compiling /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim/mock_oakd.py to mock_oakd.cpython-312.pyc
+byte-compiling /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/dronzer/boombot/install/boombot_sim/share/ament_index
+creating /home/dronzer/boombot/install/boombot_sim/share/ament_index/resource_index
+creating /home/dronzer/boombot/install/boombot_sim/share/ament_index/resource_index/packages
+copying resource/boombot_sim -> /home/dronzer/boombot/install/boombot_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/dronzer/boombot/install/boombot_sim/share/boombot_sim
+creating /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/launch
+copying launch/sim.launch.py -> /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/launch
+creating /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/urdf
+copying urdf/boombot.urdf -> /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/urdf
+running install_egg_info
+Copying ../../build/boombot_sim/boombot_sim.egg-info to /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info
+running install_scripts
+Installing mock_oakd script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+writing list of installed files to '/home/dronzer/boombot/build/boombot_sim/install.log'

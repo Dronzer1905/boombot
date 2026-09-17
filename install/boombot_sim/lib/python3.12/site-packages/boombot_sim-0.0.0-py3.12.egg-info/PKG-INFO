@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: boombot-sim
+Version: 0.0.0
+Summary: Gazebo Harmonic simulation for Boombot
+Maintainer: dronzer
+Maintainer-email: dronzer@todo.todo
+License: Apache-2.0

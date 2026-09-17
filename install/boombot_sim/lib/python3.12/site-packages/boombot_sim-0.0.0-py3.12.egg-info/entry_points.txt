@@ -1,0 +1,3 @@
+[console_scripts]
+mock_oakd = boombot_sim.mock_oakd:main
+sim_joystick = boombot_sim.sim_joystick_teleop:main
