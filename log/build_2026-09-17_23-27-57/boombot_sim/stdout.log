@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/boombot_sim/boombot_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/boombot_sim/boombot_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/boombot_sim/boombot_sim.egg-info/entry_points.txt
+writing requirements to ../../build/boombot_sim/boombot_sim.egg-info/requires.txt
+writing top-level names to ../../build/boombot_sim/boombot_sim.egg-info/top_level.txt
+reading manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying urdf/boombot.urdf -> /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/urdf
+running install_egg_info
+removing '/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/boombot_sim/boombot_sim.egg-info to /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info
+running install_scripts
+Installing mock_oakd script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+Installing sim_joystick script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+writing list of installed files to '/home/dronzer/boombot/build/boombot_sim/install.log'
