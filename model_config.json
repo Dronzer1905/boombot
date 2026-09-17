@@ -1,0 +1,1 @@
+{"selected_model": "baseline", "input_dimensions": [48, 48], "channels": 1, "classes": ["angry", "disgusted", "fearful", "happy", "neutral", "sad", "surprised"], "best_accuracy": 0.5547506269155754}
