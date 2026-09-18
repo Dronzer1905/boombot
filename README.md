@@ -194,8 +194,8 @@ Provides a complete Gazebo Harmonic simulation environment for BoomBot without n
   2. Extracts the robot's current heading (yaw $\psi$) from its orientation quaternion $(w, x, y, z)$:
      $$\psi = \text{atan2}\left(2(wz + xy),\, 1 - 2(y^2 + z^2)\right)$$
   3. Applies a 2D coordinate frame rotation to transform world displacement into the robot/camera's local reference frame:
-     $$\text{local\_z} = \Delta x \cos(\psi) + \Delta y \sin(\psi) \quad \text{(Depth / Forward)}$$
-     $$\text{local\_x} = -\Delta x \sin(\psi) + \Delta y \cos(\psi) \quad \text{(Lateral / Horizontal)}$$
+     $$\text{local}_z = \Delta x \cos(\psi) + \Delta y \sin(\psi) \quad \text{(Depth / Forward)}$$
+     $$\text{local}_x = -\Delta x \sin(\psi) + \Delta y \cos(\psi) \quad \text{(Lateral / Horizontal)}$$
   4. Publishes `Point(x=local_x, y=0.0, z=local_z)` on `/target_person_pose`. Downstream navigation algorithms receive the exact same coordinate frame and topic format as they would from the physical OAK-D camera.
 
 #### 🕹 Node: `sim_joystick` (`sim_joystick_teleop.py`)
