@@ -1,3 +1,0 @@
-[console_scripts]
-joystick_publisher = boombot_teleop.joy_pub:main
-serial_transmitter = boombot_teleop.serial_send:main
