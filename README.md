@@ -54,10 +54,10 @@ graph TD
     end
 
     subgraph Gazebo Harmonic [gz sim]
-        BRIDGE -->|gz.msgs.Twist| GZ_VEL[VelocityControl System Plugin]
+        BRIDGE -- "gz.msgs.Twist" --> GZ_VEL[VelocityControl System Plugin]
         GZ_VEL --> BOOMBOT_MODEL[BoomBot URDF Model]
-        GZ_POSE[PosePublisher Plugin] -->|gz.msgs.Pose_V| BRIDGE
-        BRIDGE -->|/gazebo/model_poses (PoseArray)| MOCK
+        GZ_POSE[PosePublisher Plugin] -- "gz.msgs.Pose_V" --> BRIDGE
+        BRIDGE -- "/gazebo/model_poses (PoseArray)" --> MOCK
         PERSON[person_cylinder Model] -. Target .- GZ_POSE
     end
 ```
