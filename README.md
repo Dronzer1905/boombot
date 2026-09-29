@@ -1,4 +1,4 @@
-# 🤖 BoomBot: Autonomous & Teleoperated Mobile Robot Platform
+# BoomBot: Autonomous & Teleoperated Mobile Robot Platform
 
 BoomBot is a modular mobile robotic platform developed on **ROS 2 (Jazzy Jalisco)**. It features a complete pipeline spanning:
 - **Spatial AI Computer Vision**: Hardware-accelerated 3D person tracking using a Luxonis OAK-D stereo depth camera.
