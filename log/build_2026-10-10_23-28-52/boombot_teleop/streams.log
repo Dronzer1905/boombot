@@ -1,0 +1,22 @@
+[1.872s] Invoking command in '/home/dronzer/boombot/src/boombot_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_teleop build --build-base /home/dronzer/boombot/build/boombot_teleop/build install --record /home/dronzer/boombot/build/boombot_teleop/install.log --single-version-externally-managed install_data
+[2.252s] running egg_info
+[2.284s] writing ../../build/boombot_teleop/boombot_teleop.egg-info/PKG-INFO
+[2.285s] writing dependency_links to ../../build/boombot_teleop/boombot_teleop.egg-info/dependency_links.txt
+[2.285s] writing entry points to ../../build/boombot_teleop/boombot_teleop.egg-info/entry_points.txt
+[2.285s] writing requirements to ../../build/boombot_teleop/boombot_teleop.egg-info/requires.txt
+[2.285s] writing top-level names to ../../build/boombot_teleop/boombot_teleop.egg-info/top_level.txt
+[2.353s] reading manifest file '../../build/boombot_teleop/boombot_teleop.egg-info/SOURCES.txt'
+[2.355s] writing manifest file '../../build/boombot_teleop/boombot_teleop.egg-info/SOURCES.txt'
+[2.356s] running build
+[2.356s] running build_py
+[2.357s] running install
+[2.362s] running install_lib
+[2.396s] running install_data
+[2.396s] running install_egg_info
+[2.431s] removing '/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages/boombot_teleop-0.0.0-py3.12.egg-info' (and everything under it)
+[2.435s] Copying ../../build/boombot_teleop/boombot_teleop.egg-info to /home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages/boombot_teleop-0.0.0-py3.12.egg-info
+[2.436s] running install_scripts
+[2.632s] Installing joystick_publisher script to /home/dronzer/boombot/install/boombot_teleop/lib/boombot_teleop
+[2.632s] Installing serial_transmitter script to /home/dronzer/boombot/install/boombot_teleop/lib/boombot_teleop
+[2.632s] writing list of installed files to '/home/dronzer/boombot/build/boombot_teleop/install.log'
+[2.701s] Invoked command in '/home/dronzer/boombot/src/boombot_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_teleop build --build-base /home/dronzer/boombot/build/boombot_teleop/build install --record /home/dronzer/boombot/build/boombot_teleop/install.log --single-version-externally-managed install_data

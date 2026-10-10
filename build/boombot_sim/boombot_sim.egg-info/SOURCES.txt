@@ -9,6 +9,7 @@ setup.py
 ../../build/boombot_sim/boombot_sim.egg-info/top_level.txt
 ../../build/boombot_sim/boombot_sim.egg-info/zip-safe
 boombot_sim/__init__.py
+boombot_sim/lqr_node.py
 boombot_sim/mock_oakd.py
 boombot_sim/sim_joystick_teleop.py
 launch/sim.launch.py

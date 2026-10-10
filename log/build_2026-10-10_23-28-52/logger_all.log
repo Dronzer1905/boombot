@@ -1,0 +1,229 @@
+[0.222s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.222s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x781a523cf590>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x781a523cef00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x781a523cef00>>, mixin_verb=('build',))
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.300s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dronzer/boombot'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_sim) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/boombot_sim' with type 'ros.ament_python' and name 'boombot_sim'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/boombot_teleop) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/boombot_teleop' with type 'ros.ament_python' and name 'boombot_teleop'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception' with type 'ros.ament_python' and name 'perception'
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.372s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/dronzer/boombot/install
+[0.373s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/dronzer/cognitive_robot_WS/install
+[0.373s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/dronzer/ros2_ws/install
+[0.375s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 392 installed packages in /opt/ros/jazzy
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'boombot_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.430s] DEBUG:colcon.colcon_core.verb:Building package 'boombot_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dronzer/boombot/build/boombot_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dronzer/boombot/install/boombot_sim', 'merge_install': False, 'path': '/home/dronzer/boombot/src/boombot_sim', 'symlink_install': False, 'test_result_base': None}
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_target' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'boombot_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.431s] DEBUG:colcon.colcon_core.verb:Building package 'boombot_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dronzer/boombot/build/boombot_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dronzer/boombot/install/boombot_teleop', 'merge_install': False, 'path': '/home/dronzer/boombot/src/boombot_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.431s] DEBUG:colcon.colcon_core.verb:Building package 'perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dronzer/boombot/build/perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dronzer/boombot/install/perception', 'merge_install': False, 'path': '/home/dronzer/boombot/src/perception', 'symlink_install': False, 'test_result_base': None}
+[0.432s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.432s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.433s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dronzer/boombot/src/boombot_sim' with build type 'ament_python'
+[0.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('boombot_sim', 'ament_prefix_path')
+[0.437s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/ament_prefix_path.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/ament_prefix_path.dsv'
+[0.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/ament_prefix_path.sh'
+[0.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.445s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dronzer/boombot/src/boombot_teleop' with build type 'ament_python'
+[0.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('boombot_teleop', 'ament_prefix_path')
+[0.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/ament_prefix_path.ps1'
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/ament_prefix_path.dsv'
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/ament_prefix_path.sh'
+[0.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.447s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.450s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dronzer/boombot/src/perception' with build type 'ament_python'
+[0.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'ament_prefix_path')
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/perception/share/perception/hook/ament_prefix_path.ps1'
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/perception/share/perception/hook/ament_prefix_path.dsv'
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/perception/share/perception/hook/ament_prefix_path.sh'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.724s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dronzer/boombot/src/boombot_sim'
+[0.725s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.725s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.014s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dronzer/boombot/src/boombot_teleop'
+[1.014s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.014s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.283s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dronzer/boombot/src/perception'
+[1.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dronzer/boombot/src/boombot_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_sim build --build-base /home/dronzer/boombot/build/boombot_sim/build install --record /home/dronzer/boombot/build/boombot_sim/install.log --single-version-externally-managed install_data
+[2.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dronzer/boombot/src/perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/dronzer/boombot/build/perception/build install --record /home/dronzer/boombot/build/perception/install.log --single-version-externally-managed install_data
+[2.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dronzer/boombot/src/boombot_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_teleop build --build-base /home/dronzer/boombot/build/boombot_teleop/build install --record /home/dronzer/boombot/build/boombot_teleop/install.log --single-version-externally-managed install_data
+[3.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dronzer/boombot/src/boombot_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_sim build --build-base /home/dronzer/boombot/build/boombot_sim/build install --record /home/dronzer/boombot/build/boombot_sim/install.log --single-version-externally-managed install_data
+[3.129s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim' for CMake module files
+[3.130s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim' for CMake config files
+[3.130s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim/lib'
+[3.130s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim/bin'
+[3.130s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim/lib/pkgconfig/boombot_sim.pc'
+[3.131s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages'
+[3.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('boombot_sim', 'pythonpath')
+[3.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/pythonpath.ps1'
+[3.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/pythonpath.dsv'
+[3.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/hook/pythonpath.sh'
+[3.132s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_sim/bin'
+[3.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(boombot_sim)
+[3.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.ps1'
+[3.134s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.dsv'
+[3.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.sh'
+[3.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.bash'
+[3.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.zsh'
+[3.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dronzer/boombot/install/boombot_sim/share/colcon-core/packages/boombot_sim)
+[3.138s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception' for CMake module files
+[3.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dronzer/boombot/src/perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/dronzer/boombot/build/perception/build install --record /home/dronzer/boombot/build/perception/install.log --single-version-externally-managed install_data
+[3.139s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception' for CMake config files
+[3.140s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception/lib'
+[3.140s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception/bin'
+[3.140s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception/lib/pkgconfig/perception.pc'
+[3.140s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception/lib/python3.12/site-packages'
+[3.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'pythonpath')
+[3.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/perception/share/perception/hook/pythonpath.ps1'
+[3.141s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/perception/share/perception/hook/pythonpath.dsv'
+[3.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/perception/share/perception/hook/pythonpath.sh'
+[3.143s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/perception/bin'
+[3.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception)
+[3.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/perception/share/perception/package.ps1'
+[3.143s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dronzer/boombot/install/perception/share/perception/package.dsv'
+[3.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/perception/share/perception/package.sh'
+[3.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/perception/share/perception/package.bash'
+[3.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/perception/share/perception/package.zsh'
+[3.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dronzer/boombot/install/perception/share/colcon-core/packages/perception)
+[3.145s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop' for CMake module files
+[3.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dronzer/boombot/src/boombot_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_teleop build --build-base /home/dronzer/boombot/build/boombot_teleop/build install --record /home/dronzer/boombot/build/boombot_teleop/install.log --single-version-externally-managed install_data
+[3.147s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop' for CMake config files
+[3.147s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop/lib'
+[3.147s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop/bin'
+[3.147s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop/lib/pkgconfig/boombot_teleop.pc'
+[3.148s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop/lib/python3.12/site-packages'
+[3.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('boombot_teleop', 'pythonpath')
+[3.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/pythonpath.ps1'
+[3.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/pythonpath.dsv'
+[3.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/hook/pythonpath.sh'
+[3.149s] Level 1:colcon.colcon_core.environment:checking '/home/dronzer/boombot/install/boombot_teleop/bin'
+[3.149s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(boombot_teleop)
+[3.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/package.ps1'
+[3.150s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/package.dsv'
+[3.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/package.sh'
+[3.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/package.bash'
+[3.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/dronzer/boombot/install/boombot_teleop/share/boombot_teleop/package.zsh'
+[3.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dronzer/boombot/install/boombot_teleop/share/colcon-core/packages/boombot_teleop)
+[3.151s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.152s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.152s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.152s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.160s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.215s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.216s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dronzer/boombot/install/local_setup.ps1'
+[3.217s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dronzer/boombot/install/_local_setup_util_ps1.py'
+[3.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dronzer/boombot/install/setup.ps1'
+[3.220s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dronzer/boombot/install/local_setup.sh'
+[3.220s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dronzer/boombot/install/_local_setup_util_sh.py'
+[3.221s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dronzer/boombot/install/setup.sh'
+[3.222s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dronzer/boombot/install/local_setup.bash'
+[3.223s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dronzer/boombot/install/setup.bash'
+[3.224s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dronzer/boombot/install/local_setup.zsh'
+[3.225s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dronzer/boombot/install/setup.zsh'
