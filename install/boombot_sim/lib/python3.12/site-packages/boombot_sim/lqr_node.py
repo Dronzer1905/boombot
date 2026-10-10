@@ -25,13 +25,13 @@ class LQR(Node):
         self.get_logger().info(f"LQR ready K=\n{self.K}")
 
     def pose_callback(self,msg):
-        e_foreward=msg.z-self.target
-        e_lateral=msg.x
-        e_heading= np.arctan2(msg.x,msg.z) #theta= tan^-1(x,y)
+        e_foreward=msg.x-self.target
+        e_lateral=msg.y
+        e_heading= np.arctan2(msg.y,msg.x) #theta= tan^-1(x,y)
         x_error=np.array([[e_foreward],[e_lateral],[e_heading]]) #error vector
 
         #velocity optimisation
-        u= -self.K @ x_error
+        u= self.K @ x_error
         cmd=Twist()
         cmd.linear.x = float(np.clip(u[0][0], -1.0, 1.0))
         cmd.linear.y = float(np.clip(u[1][0], -1.0, 1.0))

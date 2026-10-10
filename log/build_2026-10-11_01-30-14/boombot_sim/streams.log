@@ -1,0 +1,26 @@
+[1.066s] Invoking command in '/home/dronzer/boombot/src/boombot_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_sim build --build-base /home/dronzer/boombot/build/boombot_sim/build install --record /home/dronzer/boombot/build/boombot_sim/install.log --single-version-externally-managed install_data
+[1.478s] running egg_info
+[1.518s] writing ../../build/boombot_sim/boombot_sim.egg-info/PKG-INFO
+[1.518s] writing dependency_links to ../../build/boombot_sim/boombot_sim.egg-info/dependency_links.txt
+[1.518s] writing entry points to ../../build/boombot_sim/boombot_sim.egg-info/entry_points.txt
+[1.518s] writing requirements to ../../build/boombot_sim/boombot_sim.egg-info/requires.txt
+[1.519s] writing top-level names to ../../build/boombot_sim/boombot_sim.egg-info/top_level.txt
+[1.597s] reading manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+[1.598s] writing manifest file '../../build/boombot_sim/boombot_sim.egg-info/SOURCES.txt'
+[1.598s] running build
+[1.598s] running build_py
+[1.599s] copying boombot_sim/mock_oakd.py -> /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim
+[1.599s] running install
+[1.606s] running install_lib
+[1.647s] copying /home/dronzer/boombot/build/boombot_sim/build/lib/boombot_sim/mock_oakd.py -> /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim
+[1.648s] byte-compiling /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim/mock_oakd.py to mock_oakd.cpython-312.pyc
+[1.649s] running install_data
+[1.649s] running install_egg_info
+[1.691s] removing '/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info' (and everything under it)
+[1.691s] Copying ../../build/boombot_sim/boombot_sim.egg-info to /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info
+[1.692s] running install_scripts
+[1.935s] Installing lqr_node script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+[1.935s] Installing mock_oakd script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+[1.935s] Installing sim_joystick script to /home/dronzer/boombot/install/boombot_sim/lib/boombot_sim
+[1.936s] writing list of installed files to '/home/dronzer/boombot/build/boombot_sim/install.log'
+[1.967s] Invoked command in '/home/dronzer/boombot/src/boombot_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dronzer/boombot/build/boombot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/boombot_sim build --build-base /home/dronzer/boombot/build/boombot_sim/build install --record /home/dronzer/boombot/build/boombot_sim/install.log --single-version-externally-managed install_data

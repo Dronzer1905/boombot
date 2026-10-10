@@ -25,14 +25,19 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # The new clean bridge targeting the models directly
+        # The ultimate bridge mapping to TFMessage!
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
             arguments=[
-                '/cmd_vel@geometry_msgs/msg/Twist[gz.msgs.Twist',
-                '/model/boombot/pose@geometry_msgs/msg/Pose]gz.msgs.Pose',
-                '/model/person_cylinder/pose@geometry_msgs/msg/Pose]gz.msgs.Pose'
+                
+                '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
+                
+                
+                '/world/empty/pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V'
+            ],
+            remappings=[
+                ('/world/empty/pose/info', '/gazebo/model_poses')
             ],
             output='screen'
         ),
