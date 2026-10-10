@@ -24,15 +24,16 @@ def generate_launch_description():
                  'sdf: \'<sdf version="1.6"><model name="person_cylinder"><pose>2 0 0.5 0 0 0</pose><link name="link"><visual name="visual"><geometry><cylinder><radius>0.3</radius><length>1.0</length></cylinder></geometry></visual></link></model></sdf>\''],
             output='screen'
         ),
-
+        
+        # The new clean bridge targeting the models directly
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
             arguments=[
-                '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
-                '/model_poses@geometry_msgs/msg/PoseArray[gz.msgs.Pose_V'
+                '/cmd_vel@geometry_msgs/msg/Twist[gz.msgs.Twist',
+                '/model/boombot/pose@geometry_msgs/msg/Pose]gz.msgs.Pose',
+                '/model/person_cylinder/pose@geometry_msgs/msg/Pose]gz.msgs.Pose'
             ],
-            remappings=[('/model_poses', '/gazebo/model_poses')],
             output='screen'
         ),
         
