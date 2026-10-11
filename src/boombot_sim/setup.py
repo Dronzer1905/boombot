@@ -33,7 +33,8 @@ setup(
             # 3. Register the mock OAK-D executable
             'mock_oakd = boombot_sim.mock_oakd:main',
             'sim_joystick = boombot_sim.sim_joystick_teleop:main',
-            'lqr_node = boombot_sim.lqr_node:main'
+            'lqr_node = boombot_sim.lqr_node:main',
+            'plot_results = boombot_sim.plot_results:main'
         ],
     },
 )

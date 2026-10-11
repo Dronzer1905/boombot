@@ -11,6 +11,7 @@ setup.py
 boombot_sim/__init__.py
 boombot_sim/lqr_node.py
 boombot_sim/mock_oakd.py
+boombot_sim/plot_results.py
 boombot_sim/sim_joystick_teleop.py
 launch/sim.launch.py
 resource/boombot_sim
