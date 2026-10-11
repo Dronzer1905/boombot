@@ -9,8 +9,13 @@ def generate_launch_description():
     urdf_file = os.path.join(pkg_share, 'urdf', 'boombot.urdf')
 
     return LaunchDescription([
-        ExecuteProcess(cmd=['gz', 'sim', '-r', 'empty.sdf'], output='screen'),
+        # 1. Start Gazebo
+        ExecuteProcess(
+            cmd=['gz', 'sim', '-r', 'empty.sdf'], 
+            output='screen'
+        ),
         
+        # 2. Spawn the Robot
         Node(
             package='ros_gz_sim',
             executable='create',
@@ -18,6 +23,7 @@ def generate_launch_description():
             output='screen'
         ),
         
+        # 3. Spawn the Target Cylinder
         ExecuteProcess(
             cmd=['gz', 'service', '-s', '/world/empty/create', '--reqtype', 'gz.msgs.EntityFactory', 
                  '--reptype', 'gz.msgs.Boolean', '--timeout', '1000', '--req', 
@@ -25,15 +31,13 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # The ultimate bridge mapping to TFMessage!
+        # 4. Bridge Odometry (Robot) and TF Array (Cylinder)
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
             arguments=[
-                
                 '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
-                
-                
+                '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
                 '/world/empty/pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V'
             ],
             remappings=[
@@ -42,6 +46,7 @@ def generate_launch_description():
             output='screen'
         ),
         
+        # 5. Mock OAK-D Node
         Node(
             package='boombot_sim',
             executable='mock_oakd',

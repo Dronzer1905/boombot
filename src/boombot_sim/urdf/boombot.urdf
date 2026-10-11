@@ -67,7 +67,7 @@
     <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
       <topic>/cmd_vel</topic>
     </plugin>
-
+    
     <!-- Odometry/TF Publisher (Maintains coordinate frames) -->
     <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
       <odom_publish_frequency>30</odom_publish_frequency>
@@ -76,7 +76,7 @@
       <frame_id>odom</frame_id>
       <child_frame_id>base_link</child_frame_id>
     </plugin>
-    
+        
     <!-- Ground truth pose publisher for the mock OAK-D to track -->
     <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
       <publish_link_pose>true</publish_link_pose>
@@ -91,17 +91,14 @@
     <mu1>0.0</mu1>
     <mu2>0.0</mu2>
   </gazebo>
-  
   <gazebo reference="front_right_wheel">
     <mu1>0.0</mu1>
     <mu2>0.0</mu2>
   </gazebo>
-  
   <gazebo reference="back_left_wheel">
     <mu1>0.0</mu1>
     <mu2>0.0</mu2>
   </gazebo>
-  
   <gazebo reference="back_right_wheel">
     <mu1>0.0</mu1>
     <mu2>0.0</mu2>

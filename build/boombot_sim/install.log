@@ -10,6 +10,7 @@
 /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/package.xml
 /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/launch/sim.launch.py
 /home/dronzer/boombot/install/boombot_sim/share/boombot_sim/urdf/boombot.urdf
+/home/dronzer/boombot/install/boombot_sim/share/boombot_sim/worlds/boombot.world
 /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info/PKG-INFO
 /home/dronzer/boombot/install/boombot_sim/lib/python3.12/site-packages/boombot_sim-0.0.0-py3.12.egg-info/dependency_links.txt

@@ -2,6 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
+
 package_name = 'boombot_sim'
 
 setup(
@@ -18,6 +19,7 @@ setup(
         
         # 2. Install the URDF files
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*.urdf')),
+        (os.path.join('share', package_name, 'worlds'), glob('worlds/*.world')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

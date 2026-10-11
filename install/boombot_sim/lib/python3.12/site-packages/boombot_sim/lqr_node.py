@@ -33,9 +33,18 @@ class LQR(Node):
         #velocity optimisation
         u= self.K @ x_error
         cmd=Twist()
+        cmd.linear.x = float(np.clip(0.5 * e_foreward, -1.0, 1.0))
+        
+        # Strafe sideways to fix lateral error
+        cmd.linear.y = float(np.clip(0.5 * e_lateral, -1.0, 1.0))
+        
+        # Rotate on the spot to face the target
+        cmd.angular.z = float(np.clip(1.0 * e_heading, -2.0, 2.0))
+        '''
         cmd.linear.x = float(np.clip(u[0][0], -1.0, 1.0))
         cmd.linear.y = float(np.clip(u[1][0], -1.0, 1.0))
-        cmd.angular.z = float(np.clip(u[2][0], -2.0, 2.0))
+        cmd.angular.z = 0.0 #float(np.clip(u[2][0], -2.0, 2.0))
+        '''
 
         self.publisher.publish(cmd)
 
