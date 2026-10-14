@@ -7,7 +7,7 @@ BoomBot is a modular mobile robotic platform developed on **ROS 2 (Jazzy Jalisco
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [System Architecture](#-system-architecture)
 2. [Repository Structure](#-repository-structure)
 3. [Package Deep Dive](#-package-deep-dive)
@@ -25,7 +25,7 @@ BoomBot is a modular mobile robotic platform developed on **ROS 2 (Jazzy Jalisco
 
 ---
 
-## 🏛 System Architecture
+## System Architecture
 
 BoomBot operates in two primary modes: **Physical Hardware Mode** and **Digital Twin Simulation Mode**. Both modes use the standard ROS 2 topic interface (`/cmd_vel` and `/target_person_pose`), allowing control logic and perception consumers to remain identical across real and simulated environments.
 
@@ -64,7 +64,7 @@ graph TD
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 boombot/
@@ -103,13 +103,13 @@ boombot/
 
 ---
 
-## 📦 Package Deep Dive
+## Package Deep Dive
 
 ### 1. `boombot_teleop`
 
 Handles human teleoperation using a physical controller (Xbox, PlayStation, or generic USB HID joystick) and streams control packets to an onboard microcontroller over a serial interface.
 
-#### 🎮 Node: `joystick_publisher` (`joy_pub.py`)
+#### Node: `joystick_publisher` (`joy_pub.py`)
 * **Executable**: `joystick_publisher`
 * **Subscribes**: None (Direct Pygame joystick event polling)
 * **Publishes**: `cmd_vel` ([`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/Twist.html))
@@ -125,7 +125,7 @@ Handles human teleoperation using a physical controller (Xbox, PlayStation, or g
      $$\text{magnitude} = \frac{|\text{axis}| - \text{DEADZONE}}{1.0 - \text{DEADZONE}} \times 255$$
   4. **State Caching**: The node compares the current command string `"{vx} {vy} {wz}\n"` with the previous command (`last_command`). It only publishes when the command state changes, preventing message spamming.
 
-#### 🔌 Node: `serial_transmitter` (`serial_send.py`)
+#### Node: `serial_transmitter` (`serial_send.py`)
 * **Executable**: `serial_transmitter`
 * **Subscribes**: `cmd_vel` ([`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/Twist.html))
 * **Publishes**: None (Direct UART transmission via `pyserial`)
@@ -145,7 +145,7 @@ Handles human teleoperation using a physical controller (Xbox, PlayStation, or g
 
 Houses the Spatial AI computer vision pipeline running on the Luxonis OAK-D stereo depth camera.
 
-#### 👁 Node: `tracker_node` (`oakd_tracker_node.py`)
+#### Node: `tracker_node` (`oakd_tracker_node.py`)
 * **Executable**: `tracker_node`
 * **Publishes**: `/target_person_pose` ([`geometry_msgs/msg/Point`](https://docs.ros2.org/latest/api/geometry_msgs/msg/Point.html))
 * **Execution Frequency**: ~30 Hz (33 ms timer interval)
@@ -173,7 +173,7 @@ Houses the Spatial AI computer vision pipeline running on the Luxonis OAK-D ster
 
 Provides a complete Gazebo Harmonic simulation environment for BoomBot without needing physical hardware.
 
-#### 📐 URDF Model (`urdf/boombot.urdf`)
+#### URDF Model (`urdf/boombot.urdf`)
 * **Robot Geometry**:
   - **Chassis (`base_link`)**: Blue box, dimensions $0.4\text{ m} \times 0.3\text{ m} \times 0.1\text{ m}$, mass $5.0\text{ kg}$.
   - **Wheels (4x)**: Continuous revolving cylinders ($r = 0.05\text{ m}$, $l = 0.05\text{ m}$, mass $0.5\text{ kg}$ each), positioned at $(\pm 0.2, \pm 0.175, 0.0)\text{ m}$.
@@ -183,7 +183,7 @@ Provides a complete Gazebo Harmonic simulation environment for BoomBot without n
   - `gz::sim::systems::OdometryPublisher`: Calculates odometry at 30 Hz and broadcasts `/odom` and `/tf` coordinate transforms (`odom` $\to$ `base_link`).
   - `gz::sim::systems::PosePublisher`: Broadcasts full ground-truth poses of all models in the world (`use_pose_vector_msg = true`) at 30 Hz.
 
-#### 🔄 Node: `mock_oakd` (`mock_oakd.py`)
+#### Node: `mock_oakd` (`mock_oakd.py`)
 * **Executable**: `mock_oakd`
 * **Subscribes**: `/gazebo/model_poses` ([`geometry_msgs/msg/PoseArray`](https://docs.ros2.org/latest/api/geometry_msgs/msg/PoseArray.html))
 * **Publishes**: `/target_person_pose` ([`geometry_msgs/msg/Point`](https://docs.ros2.org/latest/api/geometry_msgs/msg/Point.html))
@@ -198,7 +198,7 @@ Provides a complete Gazebo Harmonic simulation environment for BoomBot without n
      $$\text{local}_x = -\Delta x \sin(\psi) + \Delta y \cos(\psi) \quad \text{(Lateral / Horizontal)}$$
   4. Publishes `Point(x=local_x, y=0.0, z=local_z)` on `/target_person_pose`. Downstream navigation algorithms receive the exact same coordinate frame and topic format as they would from the physical OAK-D camera.
 
-#### 🕹 Node: `sim_joystick` (`sim_joystick_teleop.py`)
+#### Node: `sim_joystick` (`sim_joystick_teleop.py`)
 * **Executable**: `sim_joystick`
 * **Publishes**: `cmd_vel` ([`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/Twist.html))
 * **Execution Frequency**: 20 Hz
@@ -208,7 +208,7 @@ Provides a complete Gazebo Harmonic simulation environment for BoomBot without n
   - Lateral velocity $v_y$: $[-1.0, 1.0]\text{ m/s}$
   - Angular rate $\omega_z$: $[-2.0, 2.0]\text{ rad/s}$
 
-#### 🚀 Launch Orchestrator (`sim.launch.py`)
+#### Launch Orchestrator (`sim.launch.py`)
 Runs the full simulation stack in one command:
 1. Spawns Gazebo Harmonic with an empty world (`gz sim -r empty.sdf`).
 2. Spawns the `boombot` URDF model into the world via `ros_gz_sim create`.
@@ -220,7 +220,7 @@ Runs the full simulation stack in one command:
 
 ---
 
-## 📡 ROS 2 Topics & Interfaces
+## ROS 2 Topics & Interfaces
 
 | Topic Name | Message Type | Publisher(s) | Subscriber(s) | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -232,7 +232,7 @@ Runs the full simulation stack in one command:
 
 ---
 
-## ⚡ Hardware Communication Protocol
+## Hardware Communication Protocol
 
 The node `serial_transmitter` communicates with the motor controller (ESP32/Arduino) using a lightweight ASCII streaming protocol:
 
@@ -257,7 +257,7 @@ The node `serial_transmitter` communicates with the motor controller (ESP32/Ardu
 
 ---
 
-## 🛠 Prerequisites & Installation
+## Prerequisites & Installation
 
 ### 1. System Requirements
 - **Operating System**: Ubuntu 24.04 LTS (Noble Numbat)
@@ -309,7 +309,7 @@ source install/setup.bash
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Simulation Mode (Gazebo Harmonic)
 
@@ -373,7 +373,7 @@ source install/setup.bash
 
 ---
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 | Issue | Cause | Solution |
 | :--- | :--- | :--- |
@@ -386,5 +386,5 @@ source install/setup.bash
 
 ---
 
-## 📄 License
+## License
 This project is open-source under the Apache-2.0 License.
