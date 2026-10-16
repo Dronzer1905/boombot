@@ -3,7 +3,7 @@ import time
 import pygame
 import sys
 
-ROBOT_IP = "192.168.137.60" 
+ROBOT_IP = "192.168.137.115" 
 PORT = 8080
 DEADZONE = 0.2  
 

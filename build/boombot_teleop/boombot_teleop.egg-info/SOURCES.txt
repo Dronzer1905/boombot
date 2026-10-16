@@ -11,6 +11,7 @@ setup.py
 boombot_teleop/__init__.py
 boombot_teleop/joy_pub.py
 boombot_teleop/serial_send.py
+launch/hardware.launch.py
 resource/boombot_teleop
 test/test_copyright.py
 test/test_flake8.py

@@ -14,7 +14,7 @@ class OakdTrackerNode(Node):
         self.get_logger().info("Initializing Headless OAK-D Pipeline...")
         self.pipeline = self.create_pipeline()
         
-        self.device = dai.Device(self.pipeline)
+        self.device = dai.Device(self.pipeline,usb2Mode=True)
         
         # We only need the neural network detections queue now! No video stream.
         self.q_nn = self.device.getOutputQueue(name="detections", maxSize=4, blocking=False)
@@ -45,7 +45,7 @@ class OakdTrackerNode(Node):
         mono_right.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
         mono_right.setBoardSocket(dai.CameraBoardSocket.CAM_C)
 
-        stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
+        stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.DEFAULT)
         stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
 
         spatial_net.setBlobPath(blobconverter.from_zoo(name='mobilenet-ssd', shaves=6))
